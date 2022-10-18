@@ -9,5 +9,5 @@ This repo contains the striped-out version of the source code of a Ropstam's liv
 - VueXY
 
 ### License
-Copyright (C) Ropstam Solutions Pvt. Ltd. - All Rights Reserved.
+Copyright (C) Ropstam Solutions Pvt. Ltd. - All Rights Reserved.  
 Unauthorized copying or using any part of this code is strictly prohibited
