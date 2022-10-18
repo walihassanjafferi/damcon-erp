@@ -1,0 +1,640 @@
+/*================================================================================
+	Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
+	Version: 2.0
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+.paginate_button{
+	color:#7367f0!important;
+	border:none!important;
+	color:#fff!important;
+}
+
+
+.custom-data-table thead th {
+	border-bottom: 0px!important;
+}
+
+.custom-data-table tfoot th {
+	border-top: 1px solid  #111;
+}
+
+.custom-data-table.no-footer {
+	border-bottom:none!important;
+}
+.create-btn{
+	float: right;
+	/* background:#7367f0; */
+	background:#281570;
+	color:#fff;
+	font-size: 1rem;
+	font-weight: 500;
+	border-radius: 6px;
+	padding: 10px;
+	position: absolute;
+	right: 19px;
+	z-index: 10;
+}
+.create-btn:hover {
+	box-shadow: 0 8px 25px -8px #7367f0;
+	color:#fff;
+}
+.red_asterik::after{
+	color: #d40202;
+    padding: 4px;
+    font-size: 13px;
+	content:'*';
+}
+
+/* css toggle button */
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 38px;
+	height: 21px;
+  }
+
+  .switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+  }
+
+  .slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+  }
+
+  .slider:before {
+	position: absolute;
+	content: "";
+	height: 15px;
+	width: 15px;
+	left: 3px;
+	bottom: 3px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+  }
+
+  input:checked + .slider {
+	background-color: #281570;
+  }
+
+  input:focus + .slider {
+	box-shadow: 0 0 1px #281570;
+  }
+
+  input:checked + .slider:before {
+	-webkit-transform: translateX(18px);
+	-ms-transform: translateX(18px);
+	transform: translateX(18px);
+  }
+
+  /* Rounded sliders */
+  .slider.round {
+	border-radius: 34px;
+  }
+
+  .slider.round:before {
+	border-radius: 50%;
+  }
+
+  /* alert css */
+
+  .alert{
+	  padding: 10px;
+  }
+
+  /* permission checkbox */
+  .permission_custom_list{
+
+	  list-style: none;
+
+	  display: grid;
+	  grid-template-columns: repeat(5, 1fr);
+  }
+  .permission-checkbox{
+	  margin: 12px 0px;
+  }
+
+  .error-help-block{
+	font-size: 79%;
+	margin: 10px 0px 10px 5px;
+	color: red;
+  }
+
+  .images_upload {
+	  width: 100%;
+	  height:200px;
+	  object-fit: cover;
+	  border-radius:20px;
+  }
+
+
+  .imageThumb {
+	max-height: 75px;
+	border: 2px solid;
+	padding: 1px;
+	cursor: pointer;
+  }
+  .pip {
+	display: inline-block;
+  }
+  .remove {
+	/* display: block;
+	background: #ea5455;
+	color: white;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	margin-top: 10px;
+	font-size: 11px;
+	padding: 5px; */
+	float: right;
+	font-size: 15px;
+	cursor: pointer;
+  }
+  .remove:hover {
+	background: white;
+	color: black;
+	transition: all 1s;
+  }
+
+
+#items_table td{
+	border-top:none;
+}
+/* bank view page */
+.bank_details{
+	padding-bottom: 10px;
+}
+.bank_details label{
+	font-weight: 900;
+	margin-right: 5%;
+	font-size: 14px;
+	min-width: 110px;
+}
+.rental label{
+	min-width: 267px !important;
+}
+
+.bank_details span{
+	font-size: 14px;
+	float: right;
+}
+
+.bank_details_balance{
+	text-align: center;
+}
+
+.bank_details_balance h2{
+	padding-bottom: 13px;
+}
+
+
+/* interbank details page */
+
+.inter_transfer_details label{
+	font-weight: 900;
+	margin-right: 5%;
+	font-size: 14px;
+	min-width: 140px;
+}
+.inter_transfer_details{
+	padding-bottom: 10px;
+}
+
+/* customer view page */
+
+.customer_details label{
+	font-weight: 900;
+	margin-right: 5%;
+	font-size: 12px;
+	min-width: 140px;
+}
+.customer_details span{
+	float: right;
+	margin-right: 1rem;
+}
+.customer_details{
+	padding-bottom: 6px;
+}
+.customer_details h4{
+	text-align: center;
+}
+
+.customer_details_no h5{
+	text-align: center;
+    padding-bottom: 5px;
+	text-decoration: underline;
+}
+.customer_details_no h4{
+	text-align: center;
+    padding-bottom: 5px;
+	font-style: italic;
+}
+.customer_status h4{
+	width: 50%;
+}
+.customer_status{
+	display: flex;
+}
+.customer_status .customer_status_span{
+	text-align: end;
+	width: 50%;
+}
+.customer_status label{
+	padding: 0px 12px;
+    font-size: 15px;
+    vertical-align: sub;
+    font-weight: 900;
+}
+
+.customer_projects .label_heading{
+	font-size: 13px;
+	font-weight: 700;
+	padding-right: 15px;
+	padding-bottom: 3px;
+}
+
+.customer_projects .label_value{
+	font-size: 14px;
+	padding-bottom: 3px;
+
+}
+
+.customer_cards h4{
+	text-align: center;
+}
+.customer_cards{
+	max-height: 400px;
+	min-height: 400px;
+    /* overflow-y: scroll; */
+	overflow-y: auto;
+}
+
+/* project management view */
+.tiles{
+
+	display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 0px;
+	grid-row-gap:40px;
+}
+
+.project_tiles {
+    background: #281570;
+    color: #fff;
+    border-radius: 10px;
+	font-size:13px;
+	font-weight: 500;
+	cursor: pointer;
+	margin: 0px 14px;
+    padding: 10px;
+	text-align: center;
+	width: 100%;
+}
+
+.project_tiles:hover{
+    box-shadow: 0 8px 25px -8px #281570;
+	color: #fff;
+}
+
+.project_cards_height{
+	min-height: 162px;
+}
+
+.project_cards_height h2{
+	text-align: center;
+    padding-bottom: 5px;
+	font-style: italic;
+	font-weight: 700;
+}
+
+.project_cards_height h3{
+	text-align: center;
+    padding-bottom: 5px;
+	font-style: italic;
+	font-weight: 700;
+}
+
+/* import css */
+
+.import_purchase_top{
+	max-height: 455px;
+	overflow-y: scroll;
+	scrollbar-width: none;
+
+
+}
+.import_purchase_details_no h5{
+	text-align: left;
+}
+
+.import_purchase_details_no h4{
+	padding: 5px 0px;
+}
+.import_formuals{display: flex; flex: wrap; width: 100%;}
+.import_formuals span{width: 65%;}
+.import_formuals h4{width: 35%;text-align: end;}
+
+.import_purchase_img{
+	border: 1px solid #00000029;
+}
+
+/* data tables css */
+
+table.dataTable thead .sorting:before, table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:before{
+	background-image:none;
+}
+table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_desc:after{
+	background-image: none;
+}
+
+.main-menu .navbar-header .navbar-brand .brand-text{
+	color: #281570;
+}
+
+.btn-primary{
+	border-color: #281570 !important;
+    background-color: #281570 !important;
+}
+
+a {color: #281570;}
+
+
+.main-menu.menu-light .navigation > li.active > a {
+    background: linear-gradient(
+118deg
+, #281570, rgba(115, 103, 240, 0.7));
+    box-shadow: 0 0 10px 1px rgb(115, 103, 240, 0.7);
+    color: #FFFFFF;
+    font-weight: 400;
+    border-radius: 4px;
+}
+
+.main-menu.menu-light .navigation > li ul .active{
+	background: linear-gradient(118deg, #281570, rgba(115, 103, 240, 0.7));
+	box-shadow: 0 0 10px 1px rgb(115, 103, 240, 0.7);
+}
+
+/* back btn */
+
+.main_back_btn{
+	padding: 10px;
+    background: #fff;
+    margin: 10px 0px 10px 10px;
+    width: max-content;
+}
+
+/* readmore */
+
+a.morelink {
+	text-decoration:none;
+	outline: none;
+	font-weight: 700;
+}
+.morecontent span {
+	display: none;
+}
+.comment {
+	/* width: 400px; */
+	line-height: 25px;
+	max-width: 100%;
+}
+
+.form_status{
+	text-align: end;
+}
+
+.gj-datepicker-bootstrap [role=right-icon] button{
+	width:48px;
+}
+
+.gj-datepicker .btn-outline-secondary{
+	border: 1px solid #ced4da!important;
+}
+.pdf_file{
+	background: #e74848;
+    color: #fff;
+    font-weight: 500;
+    padding: 9px;
+    border-radius: 10px;
+    width: 93%;
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+	height: 38px;
+}
+
+.project_item_card{
+	min-height: 254px;
+}
+
+
+.project_issuance_card{
+	min-height: 216px;
+}
+
+/* pagination css */
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    color: #fff !important;
+    border: 1px solid #979797;
+    background: #7367F0;
+    border-radius: 100%;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    color: #fff !important;
+    border: 1px solid #979797;
+    background: #7367F0;
+    border-radius: 100%;
+}
+div.dataTables_wrapper div.dataTables_paginate {
+    margin: 0;
+    white-space: nowrap;
+    text-align: right;
+    background-color: #E7E7E7;
+    border-radius: 27px;
+    font-size: 12px;
+    padding: 4px 6px;
+    margin-top: 13px;
+}
+
+#employee_details_form .tab-pane{
+	overflow-x: hidden;
+}
+
+.project_item_card label{
+	font-size: 13px;
+}
+
+.img_pdf_download{
+	font-size: 21px;
+    position: absolute;
+    bottom: 5px;
+    right: 30px;
+    color: #000000b5;
+}
+
+.view_details_text{
+	float: none!important;
+	display: block;
+}
+
+/* dashboard css */
+
+.main-box-shadow {
+    box-shadow: 0px 3px 19px #0000000a !important;
+}
+
+.current-items-card {
+    background-color: rgba(85,165 ,94,0.1 ) !important;
+    color: #55A55E !important;
+}
+
+.cbb-card {
+    background-color: rgb(95, 84, 152, 0.2);
+    color: #5F5498;
+}
+
+.current-phase-card {
+    background-color: rgb(155, 112, 93,0.2);
+    color: #9B705D;
+}
+
+.current-pay-card {
+    background-color: rgb(58 ,126 ,145, 0.1);
+    color: #3A7E91;
+}
+
+.consumed-items-card {
+    background-color: rgb(255, 66 ,104, 0.1);
+    color: #FF4268;
+}
+
+.current-items-in-card {
+    background-color: rgb(8 ,144, 254,0.1);
+    color: #0890FE;
+}
+
+.advance-pay-card {
+    background-color: rgb(254, 176, 40,0.1);
+    color: #FEB028;
+}
+
+.tpc-card {
+    background-color: rgb(54 ,41 ,183,0.1);
+    color: #3629B7;
+}
+
+
+/* spinner css */
+
+.overlay {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: #2222229e;
+	z-index: 10000;
+}
+
+.overlay__inner {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.overlay__content {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.spinner {
+    width: 75px;
+    height: 75px;
+    display: inline-block;
+    border-width: 2px;
+    border-color: rgba(255, 255, 255, 0.05);
+    border-top-color: #fff;
+    animation: spin 1s infinite linear;
+    border-radius: 100%;
+    border-style: solid;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* scroll designs */
+/* ::-webkit-scrollbar {
+	width: 5px;
+  }
+  
+
+  ::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey; 
+	border-radius: 10px;
+  }
+   
+
+  ::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+  } */
+
+  /* supplier view page */
+
+  .supplier_page_links{
+	 cursor: pointer;
+  }
+
+  .supplier_text{
+	font-size: 13px;
+    font-weight: 700;
+    padding-right: 15px;
+  }
+
+
+  .supplier_text_label{
+	font-size: 14px;
+    padding-right: 15px;
+  }
+
+  .employee_tiles {
+	width:100%;
+    height: 50px;
+    background: #3510c2;
+    text-align: center;
+	padding: 14px;
+	margin: 5px;
+	border-radius: 5px;
+	font-weight: 600;
+	cursor: pointer;
+  }
+  .employee_tiles a {
+	color:#fff;
+  }
+  
